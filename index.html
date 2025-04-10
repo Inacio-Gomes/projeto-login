@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/query.css">
+    
 </head>
 <body>
     <main>
@@ -14,15 +16,24 @@
                 
             </div>
             <div id="formulario">
-
+                <h1>Login</h1>        
+                    <p>Seja bem-vindo(a) novamente, Faça o login para acessar sua conta e configurar seu ambiente.</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                            <span class="material-symbols-outlined">person</span>
+                            <input type="email" placeholder="Seu email" autocomplete="email" required minlength="10" maxlength="35">
+                            <label for="email" name="email" id="email">Login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <input type="password" name="senha" id="senha" autocomplete="current-password" placeholder="Sua senha" minlength="8" maxlength="20" required>
+                        <label for="senha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">Esqueci a senha</a>
+                    <span class="material-symbols-outlined">mail</span>
+                </form>
             </div>
-            <h1>Login</h1>
-            Seja bem-vindo(a) novamente, Faça o login para acessar sua conta e configurar seu ambiente.
-            <form action="login.php" method="get">
-                <label for="email"><input type="email" autocomplete="off" required ></label>
-
-                <input type="password" minlength="8" maxlength="20" required>
-            </form>
         </section>
     </main>
 </body>

@@ -2,8 +2,9 @@
 
 /*
     CORES
-    Verde: #49a09d
-    Lilás: #5f2c82
+        #49a09d
+        #5f2c82
+        #80D1FC
 
 */
 
@@ -15,7 +16,7 @@
 }
 
 body, html{
-    background-color: #3A749C;
+    background-color: #80D1FC;
     height: 100vh;
     width: 100vw;
 }
@@ -29,7 +30,7 @@ main{
 section#login{
     background-color: white;
     width: 260px;
-    height: 500px;
+    height: 505px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.450);
@@ -59,27 +60,45 @@ section#login > div#formulario{
 div#formulario > h1{
     text-align: center;
     font-size: 1.3em;
-    margin-bottom: 7px;
 }
 
 div#formulario > p {
-    font-size: 0.6em;
-    margin-bottom: 7px;
+    font-size: 0.7em;
     text-align: center;
-    
 }
 
 div.campo > label{
     display: none;
 }
 
+div.campo span{
+    color: white;
+    font-size: 2em;
+    padding-left: 3.6px;
+}
+
+div.campo > input{
+    font-size: 1em;
+    height: 100%;
+    width: calc(100% - 40px);
+    transform: translateY(-8px);
+    border-radius: 8px;
+    border: none;
+    background-color: #EDF2FE;
+}
+
 form > div.campo{
-    background-color: #3A749C;
-    
+    background-color: #52A2DB;
     display: block;
     width: 100%;
-    height: 40px;
+    height: 36px; 
     margin: 10px 0px;
+    border-radius: 8px;
+    border: 1px solid #52A2DB;
+}
+
+div.campo > input:focus-within{
+    background-color: white;
 }
 
 form > input[type=submit]{
@@ -88,8 +107,8 @@ form > input[type=submit]{
     width: 100%;
     height: 40px;
     background-color: #5ed3a3;
-    border: 1px solid black;
-    margin: 10px 0px;
+    border-radius: 8px;
+    margin: 15px 0px;
 }
 
 form > input[type=submit]:hover{
@@ -105,9 +124,10 @@ form > a.botao{
     height: 40px;
     padding-top: 7px;
     color: black;
-    background-color: white;
-    border: 1px solid black;
+    background-color: white;   
     text-decoration: none;
+    border: 1px solid black;
+    border-radius: 8px;
 }
 
 form > a.botao:hover{
@@ -116,6 +136,6 @@ form > a.botao:hover{
 
 }
 
-a > span.material-symbols-outlined{
+form > a > span.material-symbols-outlined{
     font-size: 0.9em;
 }

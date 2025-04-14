@@ -45,7 +45,7 @@ section#login{
 
 section#login > div#imagem{
     background: #5f2c82 url(../imagens/fundo.jpg) center center;
-    height: 200px;
+    height: 225px;
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
@@ -67,4 +67,55 @@ div#formulario > p {
     margin-bottom: 7px;
     text-align: center;
     
+}
+
+div.campo > label{
+    display: none;
+}
+
+form > div.campo{
+    background-color: #3A749C;
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+}
+
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #5ed3a3;
+    border: 1px solid black;
+    margin: 10px 0px;
+}
+
+form > input[type=submit]:hover{
+    background-color: #5ef46ac3;
+    cursor: pointer;
+}
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 7px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+form > a.botao:hover{
+    background-color: #5ef46ac3;
+    cursor: pointer;
+
+}
+
+a > span.material-symbols-outlined{
+    font-size: 0.9em;
 }

@@ -38,10 +38,10 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem{
@@ -81,10 +81,11 @@ div.campo > input{
     font-size: 1em;
     height: 100%;
     width: calc(100% - 40px);
-    transform: translateY(-8px);
     border-radius: 8px;
     border: none;
     background-color: #EDF2FE;
+
+    transform: translateY(-8px);
 }
 
 form > div.campo{
@@ -131,11 +132,13 @@ form > a.botao{
 }
 
 form > a.botao:hover{
-    background-color: #5ef46ac3;
+    background-color: #EDF2FE;
     cursor: pointer;
 
 }
 
 form > a > span.material-symbols-outlined{
     font-size: 0.9em;
+
+    transform: translateY(2px);
 }
